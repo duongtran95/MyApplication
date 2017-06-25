@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TextPrimary">
+        <item name="android:textColor">@color/theme_light_text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="type">primary</item>-->
+    </style>
+
+    <style name="TextSecondary">
+        <item name="android:textColor">@color/theme_light_text_secondary</item>
+        <item name="android:textSize">14sp</item>
+        <!--<item name="type">secondary</item>-->
+    </style>
+
+    <style name="TextTertiary">
+        <item name="android:textColor">@color/theme_light_text_secondary</item>
+        <item name="android:textSize">12sp</item>
+        <!--<item name="type">tertiary</item>-->
+    </style>
+
+
+    <style name="AppThemeDark" parent="AppBaseThemeDark" />
+
+    <style name="AppThemeDarkDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:activatedBackgroundIndicator">@color/grey_dark</item>
+<!--        <item name="backgroundColor">@color/grey_material</item>-->
+        <item name="android:colorBackground">@color/grey_material</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="toolbarStyle">@style/ActionBarTheme</item>
+    </style>
+
+    <style name="AppBaseThemeDark" parent="Theme.AppCompat">
+        <item name="actionBarPopupTheme">@style/PopupTheme</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+        <item name="android:displayOptions">showCustom</item>
+        <item name="android:windowBackground">@color/grey_material</item>
+        <item name="colorPrimary">@color/grey_material</item>
+<!--        <item name="backgroundColor">@color/grey_material</item>-->
+        <item name="android:colorBackground">@color/grey_material</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppThemeLight" parent="AppBaseThemeLight" />
+    <style name="AppBaseThemeLight" parent="Theme.AppCompat.Light">
+        <item name="actionBarPopupTheme">@style/PopupTheme</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+        <item name="android:displayOptions">showCustom</item>
+        <item name="android:windowBackground">@color/white_pure</item>
+        <item name="colorPrimary">@color/white_pure</item>
+        <!--        <item name="backgroundColor">@color/grey_material</item>-->
+        <item name="android:colorBackground">@color/white_pure</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="ActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@color/text_primary_dark</item>
+    </style>
+
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">@color/grey_material</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+    </style>
+
+    <style name="PopupThemeLight" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/grey_light_mega_ultra</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+    </style>
+    <style name="ChipTitleStyle">
+        <item name="android:paddingLeft">@dimen/chip_title_padding_start</item>
+    </style>
+    <style name="ChipIconStyle">
+        <item name="android:layout_marginRight">@dimen/chip_icon_margin_start</item>
+    </style>
+    <style name="ChipSubtitleStyle">
+        <item name="android:paddingLeft">@dimen/chip_subtitle_padding_start</item>
+    </style>
+</resources>

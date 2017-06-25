@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:background="@color/grey_dark"
+    android:windowSoftInputMode="adjustPan">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtAdress"
+        android:layout_height="wrap_content" />
+    <com.example.trantrungduong95.myapplication.ui.BounceListView
+        android:id="@+id/conversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white_pure"
+        android:clipToPadding="false"
+        android:divider="@color/transparent"
+        android:dividerHeight="2dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="56dp"
+        android:paddingRight="8dp" />
+
+    <include
+        android:id="@+id/compose_view"
+        layout="@layout/view_compose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false" />
+</FrameLayout>
